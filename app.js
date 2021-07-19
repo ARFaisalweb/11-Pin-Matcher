@@ -49,6 +49,10 @@ const pinMatching = () => {
   notification.style.display = "block";
   const mainSection = document.getElementById("main-section");
   mainSection.style.display = "none";
+  const typedPin = document.getElementById("typed-pin");
+  typedPin.value = "";
+  const pinInput = document.getElementById("pin");
+  pinInput.value ="";
 };
 const displayMatchResult = (correctStatus, incorrectStatus) => {
   const correct = document.getElementById("correct");
